@@ -8,6 +8,11 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    font-family: 'Verdana', Geneva, Tahoma, sans-serif ;
+}
+
+#welcome {
+    display: none;
 }
 
 img {
@@ -52,4 +57,257 @@ img {
 #bottomContent a span {
     flex: 1;
     padding-left: 0.5rem;
+}
+
+/*
+------ mainpage
+*/
+
+#homePage {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90vw;
+    height: 40px;
+}
+
+nav h3 {
+    font: bold 1.1rem 'verdana', arial, helvetica;
+    letter-spacing: -0.045rem;
+}
+
+nav a {
+    color: #0247B7;
+    text-decoration: none;
+    font: 500 0.95rem 'verdana', arial, helvetica;
+}
+
+#imageArea {
+    border: 1px solid green;
+    padding: 10px 0;
+    width: 300px;
+    border-radius: 0.25rem;
+    display: flex;
+    overflow-x: scroll;
+}
+
+#imageArea img {
+    width: 300px;
+    height: 200px;
+    border-radius: 0.25rem;
+    transition: all 0.25s linear;
+}
+
+#congratulations {
+    background: #d9d9d942;
+    padding: 5px;
+    margin: 15px 0;
+    border-radius: 0.25rem;
+    display: flex;
+    align-items: center;
+    color: red;
+}
+
+#congratulations span {
+    flex: 1;
+    padding-left: 3px;
+    font-size: 10px;
+    font-weight: 600;
+}
+
+#logoSpan {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    font-weight: 500;
+    width:  95vw;
+    padding: 10px 0;
+}
+
+#cowGift {
+    display: flex;
+    justify-content: space-between;
+    width:  95vw;
+    padding: 10px 0;
+}
+
+#cowGift img {
+    width: 145px;
+    height: 80px;
+    border-radius: 0.45rem;
+}
+
+.newUser {
+    border: 1px solid #d9d9d9;
+    padding: 10px;
+    width: 95vw;
+    border-radius: 0.45rem;
+    box-shadow: -1px 1px 2px 2px rgba(0, 0, 0, 0.068), 1px 1px 2px 2px rgba(0, 0, 0, 0.103) ;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lastChild {
+    margin-bottom: 6rem;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    border-radius: 0.45rem;
+}
+
+.newUser .newUserList {
+    display: flex;
+    align-items: center;
+}
+
+.newUser ul {
+    list-style: none;
+    font-size: 14px;
+    padding-left: 5px;
+}
+
+.newUser li:first-child {
+    font: bold 1rem ''
+}
+
+.newUser ul span {
+    color: red;
+}
+
+
+.highlight {
+    background: #d9d9d92d;
+    color: red;
+    font-size: 13px;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 0.45rem;
+}
+
+.newUser button {
+    color: white;
+    background: #0247B7;
+    border: 0;
+    border-radius: 10rem;
+    width: 10rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bottomNav {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background: #fff;
+    color: rgb(126, 126, 126);
+}
+
+#bottomNav ul {
+    list-style: none;
+    border-top: 1px solid #d9d9d9;
+    width: 100vw;
+    height: 50px;
+    padding: 0 10px;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.active {
+    color: #0247B7;
+    font-weight: bold;
+}
+
+#activity {
+    border: 3px solid #d9d9d9;
+    border-radius: 50%;
+    padding: 1rem 0.6rem;
+    font-size: 8px;
+    font-weight: bold;
+    color: #fff;
+    background: #0247B7;
+    translate: 0 -42%;
+}
+
+/* 
+----- orderPage
+*/
+
+#orderPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+}
+
+#overall_order {
+    background: rgb(195, 125, 255);
+    width: 100vw;
+    padding: 20px 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    font-weight: 500;
+}
+
+#order_buy {
+    border: 1px solid #fff;
+    border-radius: 5rem;
+    width: 90vw;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+}
+
+#my_order {
+    background: #fff;
+    color: #0247B7;
+    width: 50vw;
+    border-radius: 5rem 0 0 5rem;
+    display: grid;
+    place-items: center;
+    transition: all 0.3s ease;
+}
+
+#buy {
+    display: grid;
+    place-items: center;
+    width: 50vw;
+    transition: all 0.3s ease;
+}
+
+#investment_income {
+    width: 90vw;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+#investment_income div {
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font: 500 0.85rem 'verdana', arial, helvetica;
+}
+
+#investment_income div#divider {
+    height: 2rem;
+    width: 1px;
+    background: #fff;
 }
