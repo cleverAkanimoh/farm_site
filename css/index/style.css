@@ -4,11 +4,23 @@
     box-sizing: border-box;
 }
 
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-family: 'Verdana', Geneva, Tahoma, sans-serif ;
+    align-items: center;
+    font-family: 'Verdana', Geneva, Tahoma, sans-serif;
+    width: 100vw;
+}
+
+button {
+    cursor: pointer;
 }
 
 #welcome {
@@ -64,7 +76,7 @@ img {
 */
 
 #homePage {
-    display: none;
+    display: flex;
     flex-direction: column;
     align-items: center;
 }
@@ -126,14 +138,14 @@ nav a {
     justify-content: space-between;
     text-align: center;
     font-weight: 500;
-    width:  95vw;
+    width: 95vw;
     padding: 10px 0;
 }
 
 #cowGift {
     display: flex;
     justify-content: space-between;
-    width:  95vw;
+    width: 95vw;
     padding: 10px 0;
 }
 
@@ -148,7 +160,7 @@ nav a {
     padding: 10px;
     width: 95vw;
     border-radius: 0.45rem;
-    box-shadow: -1px 1px 2px 2px rgba(0, 0, 0, 0.068), 1px 1px 2px 2px rgba(0, 0, 0, 0.103) ;
+    box-shadow: -1px 1px 2px 2px rgba(0, 0, 0, 0.068), 1px 1px 2px 2px rgba(0, 0, 0, 0.103);
     margin-bottom: 20px;
     display: flex;
     flex-direction: column;
@@ -224,6 +236,7 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    cursor: pointer;
 }
 
 .active {
@@ -254,14 +267,14 @@ img {
 }
 
 #overall_order {
-    background: rgb(195, 125, 255);
+    background: #8e3ed4;
     width: 100vw;
     padding: 20px 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
     color: #fff;
-    font-weight: 500;
+    font: 500 0.90rem 'verdana', arial, helvetica;
 }
 
 #order_buy {
@@ -296,6 +309,7 @@ img {
     height: 70px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 #investment_income div {
@@ -303,11 +317,98 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font: 500 0.85rem 'verdana', arial, helvetica;
+    font: 500 0.8rem 'verdana', arial, helvetica;
 }
 
 #investment_income div#divider {
     height: 2rem;
-    width: 1px;
+    width: 4px;
     background: #fff;
+}
+
+/* profile */
+
+#header {
+    width: 100vw;
+    height: auto;
+    padding: 1rem;
+    color: #fff;
+    background: radial-gradient(#003d9e, #0e264c);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    border-radius: 0 0 0.5rem 0.5rem;
+}
+
+#header img {
+    border: 2px solid #fff;
+    border-radius: 50rem;
+}
+
+#header h4 {
+    font: 500 0.8rem 'georgia';
+}
+
+#header p {
+    font: 500 0.8rem 'verdana';
+    color: #b4b4b4;
+}
+
+#profile-content {
+    width: 100vw;
+    padding: 1.5rem 1rem;
+    margin-bottom: 70px;
+}
+
+#profile-content h3 {
+    font: bold 1.30rem/2.4 'verdana';
+    text-transform: capitalize;
+}
+
+#profile-content p {
+    font: 500 0.835rem/1.5 'verdana';
+    color: #4a4a4a;
+}
+
+@media screen and (min-width: 600px) {
+
+    main,
+    #cowGift,
+    .newUser,
+    #logoSpan,
+    #profile-content,
+    #header,
+    #orderPage,
+    #overall_order,
+    #investment_income {
+        width: 450px;
+    }
+
+    main {
+        padding: 1.5rem 1rem;
+    }
+
+    #header,
+    #overall_order {
+        border-radius: 0.5rem;
+    }
+
+    #order_buy {
+        width: 400px;
+    }
+    #bottomNav {
+        left: 50%;
+        translate: -50% 0;
+        border: 1px solid #d9d9d9;
+        border-bottom: 0px;
+        border-radius: 0.4rem;
+    }
+    #bottomNav ul {
+        width: 500px;
+    }
+    nav {
+        width: 400px;
+    }
 }
